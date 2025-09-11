@@ -6,13 +6,14 @@ export default defineNuxtConfig({
     autoImport: true
   },
   css: ['~/assets/css/main.css'],
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    'usebootstrap',
+    '@vesp/nuxt-fontawesome'
   ]
 })
