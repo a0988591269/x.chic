@@ -88,7 +88,7 @@
   </div>
 </template>
 
-<script setup="ts">
+<!-- <script setup="ts">
 // 等待 DOM 載入完成
 document.addEventListener("DOMContentLoaded", () => {
   // -------- 網頁版選單 --------
@@ -182,4 +182,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-</script>
+</script> -->

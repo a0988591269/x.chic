@@ -224,9 +224,9 @@
                 <a href=""><span>珠寶系列</span>Jewelry</a>
 
                 <ul class="list_menu" id="list_menu5">
-                    @*<li>
+                    <li>
                         <a href="#"><span>熱門</span>Hot items</a>
-                    </li>*@
+                    </li>
                     <li>
                         <a href="#"><span>銀飾</span>Silver</a>
                     </li>

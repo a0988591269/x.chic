@@ -1,26 +1,52 @@
 <template>
-    <div class=" container-fluid " id="footer"
-            style="width: 100%; height:auto;background-color: #dad1ce80;table-layout: fixed; ">
-        <div class="row p-3  ">
+    <!-- Desktop Footer -->
+    <div class="container-fluid" id="footer"
+        style="width: 100%; height:auto;background-color: #dad1ce80;table-layout: fixed;">
+        <div class="row p-3">
             <div class="col-6 container container-fluid">
-                <span><a href="" class="pr-2">購物須知</a></span>
-                <span><a href="" class="pr-2">常見問題</a></span>
-                <span><a href="#" class="pr-2">最新公告</a></span>
-                <span><a href="" class="pr-2">會員權益聲明</a></span>
+                <span>
+                    <NuxtLink to="/" class="pr-2">購物須知</NuxtLink>
+                </span>
+                <span>
+                    <NuxtLink to="/" class="pr-2">常見問題</NuxtLink>
+                </span>
+                <span>
+                    <NuxtLink to="/" class="pr-2">最新公告</NuxtLink>
+                </span>
+                <span>
+                    <NuxtLink to="/" class="pr-2">會員權益聲明</NuxtLink>
+                </span>
             </div>
             <div class="col-6 container-fluid text-right small">
                 <p style="color: #5f5965;">
-                    Copyright&copy;2015-2019
-                    <a href=""> Day Dreaming creative studio  </a>. All right reserved.
+                    Copyright&copy;{{ currentYear }}
+                    <NuxtLink to="/"> Day Dreaming creative studio </NuxtLink>. All rights reserved.
                 </p>
             </div>
         </div>
     </div>
-    <!-- 手機板 -->
-    <div class=" container-fluid text-center" id="phone_footer">
+
+    <!-- Mobile Footer -->
+    <div class="container-fluid text-center" id="phone_footer">
         <p style="font-size: 10px;color: #5f5965;">
-            Copyright&copy;2015-2019
-            <a href="">  Day Dreaming creative studio  </a>. All right reserved.
+            Copyright&copy;{{ currentYear }}
+            <NuxtLink to="/"> Day Dreaming creative studio </NuxtLink>. All rights reserved.
         </p>
     </div>
 </template>
+
+<script setup lang="ts">
+// Get current year for copyright
+const currentYear = new Date().getFullYear();
+</script>
+
+<style scoped>
+/* Footer-specific styles if needed */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d78779;
+}
+</style>
