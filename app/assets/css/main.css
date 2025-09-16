@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 html,
 body {
   height: 100%;
@@ -44,30 +46,6 @@ a {
 a:hover {
   color: #d78779;
   text-decoration: none;
-}
-
-@media screen and (min-width:765px) {
-  #phone_guide_bar,
-  #space,
-  #search_button,
-  #phone_footer,
-  #workshop_index {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 764px) {
-  #Bar,
-  #main_bar,
-  #footer,
-  #site_name,
-  #space_box {
-    display: none;
-  }
-
-  #phone_guide_bar {
-    font-size: 16px;
-  }
 }
 
 /* 電腦版 */
@@ -196,106 +174,7 @@ a:hover {
   color: #d78779;
   text-decoration: none;
 }
-
-/* 手機板 */
-#phone_footer {
-  background-color: #dad1ce;
-  font-size: 10px;
-  color: #5f5965;
-  height: auto;
-  line-height: 24px;
-  vertical-align: middle;
-}
-
 /* footer-end */
-/* 手機板 */
-#navbar_bar {
-  background-color: #000000cc;
-  margin-top: 7px;
-}
-
-#navbar_bar span {
-  margin-left: 15px;
-}
-
-#icon {
-  margin-left: 5px;
-  margin-right: 10px;
-}
-
-.dropdown-menu {
-  background-color: transparent;
-  color: #fff;
-  border-radius: 0px;
-  border: none;
-}
-
-.dropdown-item {
-  border-radius: 5px;
-  height: 40px;
-  color: #c2c2c2;
-}
-
-#phone_guide_bar {
-  margin: inherit;
-  width: 100%;
-  background-color: white;
-  border-bottom: #ccc 2px solid;
-}
-
-#nav_btn {
-  background-color: transparent;
-  border: none;
-}
-
-#navbar_bar_user,
-#navbar_bar_main,
-#navbar_bar_footer {
-  color: #fff;
-}
-
-.nav-link {
-  margin-top: 1px;
-  height: 55px;
-  line-height: 36px;
-}
-
-.nav-link:hover {
-  background-color: #fff;
-  color: black;
-  margin-top: 1px;
-  height: 55px;
-  line-height: 36px;
-  border-radius: 5px;
-}
-
-a.nav-link {
-  color: white;
-}
-
-.side-collapse-container-left {
-  position: relative;
-  left: 0;
-  transition: left 0.3s;
-}
-
-.side-collapse-container-left.out {
-  left: 70%;
-}
-
-.side-collapse-left {
-  width: 70%;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  overflow: hidden;
-  transition: width 0.5s;
-}
-
-.side-collapse-left.in {
-  width: 0;
-}
 
 /* DIY_studio */
 #DIY_studio {
@@ -333,44 +212,6 @@ a.nav-link {
 #get_understand_button:hover {
   background-color: #5f5965;
   color: #dad1ce;
-}
-
-/*手機板搜尋欄位 */
-#search_button {
-  background-color: transparent;
-}
-
-#search_bar {
-  width: auto;
-}
-
-input[type="search"] {
-  border-radius: 5px;
-  border: 1px solid #cccccc;
-  width: 85%;
-  height: 36px;
-  padding-left: 25px;
-  outline: none;
-}
-
-input[type="search"]::-webkit-input-placeholder {
-  color: #5f5965;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-  padding-right: 15px;
-}
-
-#search_btn {
-  height: 36px;
-  width: 60px;
-  border-radius: 5px;
-  border: 0px;
-}
-
-#search_btn:hover {
-  background-color: #5f5965;
-  color: #fff;
 }
 
 /* 電腦版搜尋欄位 */

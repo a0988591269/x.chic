@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
@@ -10,6 +12,11 @@ export default defineNuxtConfig({
     // Modify the `nuxt.config.ts` file by adding to the `export default defineNuxtConfig()`
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
