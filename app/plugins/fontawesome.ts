@@ -1,3 +1,4 @@
+import { defineNuxtPlugin } from "#app";
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -11,4 +12,7 @@ library.add(fas)
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('font-awesome-icon', FontAwesomeIcon)
+  // 用於手動掛載應用
+  // 但 Nuxt 會自動掛載，所以這行通常不需要
+  // nuxtApp.vueApp.mount("#app");
 })

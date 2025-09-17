@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   css: [
     "~/assets/css/main.css",
+    "~/assets/css/style.css",
     // Modify the `nuxt.config.ts` file by adding to the `export default defineNuxtConfig()`
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
@@ -16,6 +17,9 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+  },
+  ui: {
+    colorMode: false
   },
   modules: [
     "@nuxt/content",

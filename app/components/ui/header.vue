@@ -56,75 +56,24 @@
         </div>
     </div>
 
-    <div class="container " id="main_bar">
+    <div class="container">
         <ul id="nav">
-            <!-- <li class="jquery_out ">
-                <div class="jquery_inner "> -->
-            <li class="main_menu" id="main_menu_2">
+            <li class="main_menu">
                 <a href=""><span>品牌故事</span>Brand Story</a>
             </li>
-            <li class="main_menu" id="main_menu_3">
+            <li class="main_menu">
                 <a href=""><span>工作坊 </span>Workshop</a>
-                <ul class="list_menu" id="list_menu1">
-                    <li>
-                        <a href=""><span>特別企劃</span>Special</a>
-                    </li>
-                    <li>
-                        <a href=""><span>體驗工作坊</span>Experience</a>
-                    </li>
-                    <li>
-                        <a href=""><span>基礎金工班</span>Basic</a>
-                    </li>
-                    <li>
-                        <a href=""><span>進階金工班</span>Advanced</a>
-                    </li>
-                    <li>
-                        <a href=""><span>丙級考證班</span>JewelMakingC</a>
-                    </li>
-                    <li>
-                        <a href=""><span>乙級考證班</span>JewelMakingB</a>
-                    </li>
-                    <li>
-                        <a href=""><span>木目金技法班</span>MokumeGane</a>
-                    </li>
-                </ul>
             </li>
-            <li class="main_menu" id="main_menu_4">
+            <li class="main_menu">
                 <a href=""><span>珠寶系列</span>Jewelry</a>
-
-                <ul class="list_menu" id="list_menu5">
-                    <li>
-                        <a href="#"><span>熱門</span>Hot items</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>銀飾</span>Silver</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>木目金</span>MokumeGane</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>珍珠</span>Pearl</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>玻璃珠</span>Beading</a>
-                    </li>
-                </ul>
             </li>
-            <li class="main_menu" id="main_menu_5">
+            <li class="main_menu">
                 <a href=""><span>纖維系列</span>Fiber</a>
-                <ul class="list_menu" id="list_menu3">
-                    <li>
-                        <a href="#"><span>圍巾</span>Scarf</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>大衣</span>Coat</a>
-                    </li>
-                </ul>
             </li>
-            <li class="main_menu" id="main_menu_6">
+            <li class="main_menu">
                 <a href=""><span>訂製服務</span>Customize</a>
             </li>
-            <li class="main_menu" id="main_menu_7">
+            <li class="main_menu">
                 <a href=""><span>聯絡我們</span>Contact Us</a>
             </li>
         </ul>
