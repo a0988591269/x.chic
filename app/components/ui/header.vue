@@ -1,7 +1,7 @@
 <template>
     <!-- Guide Bar -->
     <div class="h-[40px] bg-gray-200 grid grid-cols-2 justify-items-stretch content-center">
-        <div class="justify-self-start flex items-center">
+        <div class="flex justify-self-start items-center">
             <NuxtLink to="/">
                 <input class="w-[60px] h-[30px] text-zinc-600" type="button" value="首頁">
             </NuxtLink>
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="justify-self-end flex items-center">
+        <div class="flex justify-self-end items-center">
             <NuxtLink to="/">
                 <input class="w-[60px] h-[30px] text-zinc-600" type="button" value="購物車">
             </NuxtLink>
@@ -38,16 +38,16 @@
                 <a href=""><span>品牌故事</span>Brand Story</a>
             </li>
             <li class="main_menu">
-                <a href=""><span>工作坊 </span>Workshop</a>
+                <a href=""><span>上衣</span>Top</a>
             </li>
             <li class="main_menu">
-                <a href=""><span>珠寶系列</span>Jewelry</a>
+                <a href=""><span>下著</span>Bottom</a>
             </li>
             <li class="main_menu">
-                <a href=""><span>纖維系列</span>Fiber</a>
+                <a href=""><span>配件</span>Accessories</a>
             </li>
             <li class="main_menu">
-                <a href=""><span>訂製服務</span>Customize</a>
+                <a href=""><span>周邊</span>Peripheral</a>
             </li>
             <li class="main_menu">
                 <a href=""><span>聯絡我們</span>Contact Us</a>
