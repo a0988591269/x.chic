@@ -10,13 +10,17 @@ const items = [
 </script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <UCarousel v-slot="{ item }" dots :items="items" class="w-full max-w-xs mx-auto">
-          <img :src="item" width="320" height="320" class="rounded-lg">
-        </UCarousel>
-      </div>
-    </div>
+  <div>
+    <UCarousel
+      v-slot="{ item }"
+      loop
+      dots
+      arrows
+      auto-scroll
+      :items="items"
+      :ui="{ item: 'basis-1/4' }"
+    >
+      <img :src="item" width="640" height="640" class="rounded-lg">
+    </UCarousel>
   </div>
 </template>
