@@ -15,15 +15,16 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-self-end items-center">
+        <div class="flex justify-self-end items-center mx-3">
             <NuxtLink to="/">
                 <input class="w-[60px] h-[30px] text-zinc-600" type="button" value="購物車">
             </NuxtLink>
-            <NuxtLink to="/">
-                <input class="w-[60px] h-[30px] text-zinc-600" type="button" value="登入">
+            <NuxtLink to="/login">
+                <a class="w-auto h-[30px] text-zinc-600" type="button" value="">登入</a>
             </NuxtLink>
-            <NuxtLink to="/">
-                <input class="w-[60px] h-[30px] text-zinc-600" type="button" value="註冊">
+            /
+            <NuxtLink to="/login">
+                <a class="w-auto h-[30px] text-zinc-600" type="button" value="">註冊</a>
             </NuxtLink>
         </div>
     </div>

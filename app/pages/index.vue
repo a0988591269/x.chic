@@ -10,12 +10,11 @@ const items = [
 </script>
 
 <template>
-  <div>
+  <div class="my-10">
     <UCarousel
       v-slot="{ item }"
       loop
       dots
-      arrows
       auto-scroll
       :items="items"
       :ui="{ item: 'basis-1/4' }"

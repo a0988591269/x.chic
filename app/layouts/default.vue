@@ -1,7 +1,7 @@
 <template>
   <div>
     <UiHeader />
-    <div class="my-10">
+    <div>
       <slot />
     </div>
     <UiFooter />
