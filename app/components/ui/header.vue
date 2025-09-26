@@ -36,22 +36,34 @@
     <div>
         <ul id="nav">
             <li class="main_menu">
-                <a href=""><span>品牌故事</span>Brand Story</a>
+                <NuxtLink to="/about">
+                    <span>品牌故事</span>Brand Story
+                </NuxtLink>
             </li>
             <li class="main_menu">
-                <a href=""><span>上衣</span>Top</a>
+                <NuxtLink to="/products/Top">
+                    <span>上衣</span>Top
+                </NuxtLink>
             </li>
             <li class="main_menu">
-                <a href=""><span>下著</span>Bottom</a>
+                <NuxtLink to="/products/Bottom">
+                    <span>下著</span>Bottom
+                </NuxtLink>
             </li>
             <li class="main_menu">
-                <a href=""><span>配件</span>Accessories</a>
+                <NuxtLink to="/products/Accessories">
+                    <span>配件</span>Accessories
+                </NuxtLink>
             </li>
             <li class="main_menu">
-                <a href=""><span>周邊</span>Peripheral</a>
+                <NuxtLink to="/products/Peripheral">
+                    <span>周邊</span>Peripheral
+                </NuxtLink>
             </li>
             <li class="main_menu">
-                <a href=""><span>聯絡我們</span>Contact Us</a>
+                <NuxtLink to="/contact">
+                    <span>聯絡我們</span>Contact Us
+                </NuxtLink>
             </li>
         </ul>
     </div>
