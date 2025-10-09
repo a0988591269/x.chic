@@ -35,20 +35,23 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div v-for="product in pagedProducts" :key="product.id"
                 class="bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col">
-                <img :src="product.image" :alt="product.name" class="rounded-t-xl object-cover h-48 w-full" />
-                <div class="p-4 flex-1 flex flex-col">
-                    <h3 class="font-semibold text-lg text-gray-800 mb-1 truncate">{{ product.name }}</h3>
-                    <div class="flex items-center gap-2 mb-2">
-                        <span v-if="product.discountPrice < product.price" class="text-pink-500 font-bold text-xl">
-                            ${{ product.discountPrice }}
-                        </span>
-                        <span v-if="product.discountPrice < product.price" class="text-gray-400 line-through text-sm">
-                            ${{ product.price }}
-                        </span>
-                        <span v-else class="text-gray-800 font-bold text-xl">${{ product.price }}</span>
+                <NuxtLink :to="`/products/${category}/${product.id}`">
+                    <img :src="product.image" :alt="product.name" class="rounded-t-xl object-cover h-48 w-full" />
+                    <div class="p-4 flex-1 flex flex-col">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-1 truncate">{{ product.name }}</h3>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span v-if="product.discountPrice < product.price" class="text-pink-500 font-bold text-xl">
+                                ${{ product.discountPrice }}
+                            </span>
+                            <span v-if="product.discountPrice < product.price"
+                                class="text-gray-400 line-through text-sm">
+                                ${{ product.price }}
+                            </span>
+                            <span v-else class="text-gray-800 font-bold text-xl">${{ product.price }}</span>
+                        </div>
+                        <div class="text-gray-500 text-sm mb-2">銷售量：{{ product.sales }}</div>
                     </div>
-                    <div class="text-gray-500 text-sm mb-2">銷售量：{{ product.sales }}</div>
-                </div>
+                </NuxtLink>
             </div>
         </div>
 
@@ -75,6 +78,8 @@
 </template>
 
 <script setup lang="ts">
+import { NuxtLink } from '#components'
+
 const route = useRoute()
 const { category } = route.params
 console.log('目前類別：', category)
